@@ -5,7 +5,7 @@
     "dark": "/logo/dark.svg",
     "light": "/logo/light.svg"
   },
-  "favicon": "/favicon.svg",
+  "favicon": "https://nordhost.cc/images/nordhost.png",
   "colors": {
     "primary": "#0D9373",
     "light": "#07C983",
@@ -29,9 +29,12 @@
     "name": "Panel",
     "url": "https://panel.nordhost.cc"
   },
+  "primaryTab": {
+    "name": "Overview"
+  },
   "tabs": [
     {
-      "name": "Game Services",
+      "name": "Game Servers",
       "url": "game-services"
     },
     {
@@ -70,29 +73,44 @@
       ]
     },
     {
-      "group": "Essentials",
+      "group": "Our Services",
       "pages": [
-        "essentials/markdown",
-        "essentials/code",
-        "essentials/images",
+        {
+          "group": "NordHost",
+          "icon": "server",
+          "pages": [
+            "our-services/Overview",
+            "our-services/roadmap"
+          ]
+        }, 
+        "our-services/DDoS",
         "essentials/settings",
         "essentials/navigation",
         "essentials/reusable-snippets"
       ]
-    },
+    }, 
     {
-      "group": "API Documentation",
+      "group": "General Information",
       "pages": [
         "game-services/introduction"
       ]
     },
     {
-      "group": "Endpoint Examples",
+      "group": "Games",
       "pages": [
-        "game-services/endpoint/get",
-        "game-services/endpoint/create",
-        "game-services/endpoint/delete"
-      ]
+        {
+          "group": "Minecraft",
+          "pages": ["game-services/games/minecraft/introduction"]
+        },
+        {
+          "group": "Palworld",
+          "pages": ["game-services/games/palworld/introduction"]
+        },        {
+          "group": "Factorio",
+          "pages": ["game-services/games/factorio/introduction"]
+        }
+
+    ]
     }
   ],
   "footerSocials": {
